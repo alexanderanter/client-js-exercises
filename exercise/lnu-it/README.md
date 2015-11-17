@@ -9,5 +9,5 @@ Du får själv skriva din css-kod (så klart i en separerad CSS-fil) och via jav
 den link-elementet som länkar till din CSS skjuts in i head-taggen.
 
 * Alla länkar ska ha gul bakgrundsfärg och svart länktext.
-* Du får inte ändra något i client/index.html annat än mad javascriptkoden du skriver.
+* Du får inte ändra något i client/index.html annat än med javascriptkoden du skriver.
 * Vi har redan lagt till scripttaggen sist i index.html
