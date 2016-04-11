@@ -1,2 +1,18 @@
 var ex01 = require("./ex01");
+var ex02 = require("./ex02");
+var ex03 = require("./ex03");
+var ex04 = require("./ex04");
+var ex05 = require("./ex05");
+var ex06 = require("./ex06");
+var ex07 = require("./ex07");
+var ex07 = require("./ex08");
+var ex07 = require("./ex09");
 ex01.solve();
+ex02.solve();
+ex03.solve();
+ex04.solve();
+ex05.solve();
+ex06.solve();
+ex07.solve();
+ex08.solve();
+ex09.solve();
