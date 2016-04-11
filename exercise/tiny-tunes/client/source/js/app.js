@@ -1,1 +1,2 @@
-// your code here
+var ex01 = require("./ex01");
+ex01.solve();
