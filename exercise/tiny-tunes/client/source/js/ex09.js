@@ -1,15 +1,23 @@
-function ex08() {
+function ex09() {
+  var textBoxes = document.querySelectorAll("#textboxes09 input");
+  var txtBox1 = textBoxes[0];
+  var txtBox2 = textBoxes[1];
 
-  var ulNode = document.querySelector("#todolist ul");
+document.querySelector("#textboxes09").addEventListener("blur", function() {
+  var txtBoxVal1 = txtBox1.value;
+  var txtBoxVal2 = txtBox2.value;
+  var pValNode = document.querySelector(".validation");
+  if(txtBoxVal1.length > 0 && txtBoxVal2.length > 0 ){
+    if(txtBoxVal1 === txtBoxVal2) {
+      pValNode.textContent = "the username is OK";
+    }else {
+      pValNode.textContent = "the username is not the same";
+    }
+  }else {
+    pValNode.textContent = "";
+  }
+}, true);
 
-  var buttonNode = document.querySelector("#todolistform button");
-  var inputTextNode = document.querySelector("#todolistform input");
-  buttonNode.addEventListener("click", function(event){
-      var liNode = document.createElement("li");
-      var myText = document.createTextNode(inputTextNode.value);
-      liNode.appendChild(myText);
-      ulNode.appendChild(liNode);
-  });
 }
 
-module.exports.solve = ex08;
+module.exports.solve = ex09;
